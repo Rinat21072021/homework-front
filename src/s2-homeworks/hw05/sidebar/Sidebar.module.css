@@ -1,0 +1,64 @@
+.sidebar {
+    position: absolute;
+    width: 317px;
+    height: 100vh;
+    background-color: #f0f0f0; /* Установите цвет фона */
+    z-index: 2;
+    transform: translateX(-100vh);
+    transition: 0.5s;
+
+
+}
+
+.sidebar.open {
+    transform: translateX(0);
+    background-color: #FFF;;
+}
+
+.background {
+    background: black;
+}
+
+.nav {
+    margin: 63px 0;
+    height: 80%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.nav a {
+    width: 40%;
+    margin: 0 0 45px;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    font-family: Montserrat, sans-serif;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.nav a:hover {
+    color: #0059B2;
+}
+
+.nav a.active {
+    color: #0059B2;
+    border-bottom: 1px solid #0066cc;
+
+}
+
+.close {
+    position: absolute;
+    top:16px;
+    right: 5px;
+    outline: none; /* Для синий ободки */
+    border: 0;
+    background: transparent;
+}
+
+.close img {
+
+}
